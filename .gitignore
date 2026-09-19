@@ -1,0 +1,69 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python tools
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Logs
+*.log
+logs/
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Runtime/cache
+cache/
+tmp/
+temp/
+
+# Evidence generated during runtime
+evidence/snapshots/*
+evidence/videos/*
+evidence/*.jpg
+evidence/*.jpeg
+evidence/*.png
+evidence/*.mp4
+
+# Uploaded/test runtime videos
+assets/*.mp4
+assets/*.avi
+assets/*.mov
+assets/*.mkv
+
+# Large model files
+*.onnx
+*.pt
+*.pth
+*.engine
+*.weights
+
+# PaddleOCR / PaddleX caches
+.paddlex/
+paddlex/
+paddleocr/

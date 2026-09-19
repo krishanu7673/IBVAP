@@ -1,0 +1,124 @@
+{
+    "cameras": [
+        {
+            "id": "SSB_BOP_01",
+            "source": "assets/test_border_feed.mp4",
+            "enabled": true,
+
+            "perimeter_line": [
+                [50, 400],
+                [600, 400]
+            ],
+
+            "zones": [
+                {
+                    "id": "ZONE_NORMAL",
+                    "name": "Normal Area",
+                    "type": "NORMAL",
+                    "polygon": [
+                        [0, 0],
+                        [1920, 0],
+                        [1920, 1080],
+                        [0, 1080]
+                    ],
+                    "risk_weight": 10
+                },
+                {
+                    "id": "ZONE_RESTRICTED",
+                    "name": "Restricted Area",
+                    "type": "RESTRICTED",
+                    "polygon": [
+                        [50, 300],
+                        [600, 300],
+                        [600, 500],
+                        [50, 500]
+                    ],
+                    "risk_weight": 30
+                },
+                {
+                    "id": "ZONE_HIGH_SECURITY",
+                    "name": "High Security Area",
+                    "type": "HIGH_SECURITY",
+                    "polygon": [
+                        [150, 350],
+                        [500, 350],
+                        [500, 450],
+                        [150, 450]
+                    ],
+                    "risk_weight": 50
+                }
+            ],
+
+            "detection": {
+                "confidence": 0.35,
+                "iou": 0.50
+            },
+
+            "behavior": {
+                "restricted_distance": 150,
+                "high_security_distance": 75,
+                "loitering_seconds": 20
+            }
+        },
+        {
+            "id": "SSB_BOP_02",
+            "source": "assets/test_border_feed.mp4",
+            "enabled": false,
+
+            "perimeter_line": [
+                [50, 400],
+                [600, 400]
+            ],
+
+            "zones": [
+                {
+                    "id": "ZONE_NORMAL",
+                    "name": "Normal Area",
+                    "type": "NORMAL",
+                    "polygon": [
+                        [0, 0],
+                        [1920, 0],
+                        [1920, 1080],
+                        [0, 1080]
+                    ],
+                    "risk_weight": 10
+                },
+                {
+                    "id": "ZONE_RESTRICTED",
+                    "name": "Restricted Area",
+                    "type": "RESTRICTED",
+                    "polygon": [
+                        [50, 300],
+                        [600, 300],
+                        [600, 500],
+                        [50, 500]
+                    ],
+                    "risk_weight": 30
+                },
+                {
+                    "id": "ZONE_HIGH_SECURITY",
+                    "name": "High Security Area",
+                    "type": "HIGH_SECURITY",
+                    "polygon": [
+                        [150, 350],
+                        [500, 350],
+                        [500, 450],
+                        [150, 450]
+                    ],
+                    "risk_weight": 50
+                }
+            ],
+
+            "detection": {
+                "confidence": 0.35,
+                "iou": 0.50
+            },
+
+            "behavior": {
+                "restricted_distance": 150,
+                "high_security_distance": 75,
+                "loitering_seconds": 20
+            }
+        }
+    ]
+}
